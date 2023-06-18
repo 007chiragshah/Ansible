@@ -1,0 +1,60 @@
+cat sample.yml
+
+Mobiles:
+  - name: c6
+    company: nokia
+  - name: v5
+    company: vivo
+    
+#-------------------------------------------------------
+cat key-value.yml
+
+Fruit: Apple
+Vegetable: tomato
+Liquid: Water
+
+#-------------------------------------------------------
+cat array.yml
+# This is known as the ordered type means the order of item should be same in other array
+Mobiles:
+-     nokia_c6
+-     vivo_v5
+-     mi_note5
+#-------------------------------------------------------
+cat dict_map.yml
+# This is known as unorder type means the order is not matter if we use same data in other file just key and value should be match)
+Nokia_c6:
+      RAM: 4gb
+      price: 15000
+      display: 7inch
+Samsung:
+      RAM: 8gb
+      price: 25000
+      display: 6inch
+      
+#----------------------------------------------------
+cat dict_in_dict.yml
+Nokia_c6
+    RAM:
+        size: 4gb
+        price: 5000
+    price: 15000
+    display: 7inch
+Smasung:
+    RAM:
+        size: 8gb
+        price: 8000
+    price: 25000
+    display: 8inch
+#----------------------------------------------------
+cat list_of_dict.yml
+mobiles:
+    -
+    name: nokia_C6
+    ram: 4gb
+    price: 15000
+    -
+    name: vivo_v4
+    ram: 8gb
+    price: 20000
+#---------------------------------------------------
