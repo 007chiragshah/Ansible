@@ -1,0 +1,6 @@
+if not able to ping with ansible without --ask-pass
+
+first install sshpass with 'apt-get install' sshpass and then check
+make sure the line is Uncomment 'host_key_checking = False' at /etc/ansible.conf
+Then make sure in sshd_config which is at /etc/ssh/ the line is set 'PasswordAuthentication yes'  and then run the ssh service
+now try with  ansible_pass instead of ansible_ssh_pass
