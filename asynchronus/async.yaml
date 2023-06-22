@@ -1,0 +1,16 @@
+-
+ name: This is async playbook
+ hosts: webserver1
+ tasks:
+         -
+          name: "Sleeping for 300 sec"
+          command: sleep 60
+          async: 30
+          poll: 10
+
+         -
+           name: "Creating the file"
+           command: touch /tmp/async.txt
+       
+
+

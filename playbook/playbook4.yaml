@@ -1,0 +1,12 @@
+-
+  name: This is 4th PLaybook
+  hosts: webserver1
+  tasks:
+           
+          -
+            name: "Creating the directory"
+            command: mkdir -p /tmp/ansible_dummy_dict2
+
+          -
+            name: "Creating the file into above directory"
+            command: touch /tmp/ansible_dummy_dict2/ansible_file.txt 

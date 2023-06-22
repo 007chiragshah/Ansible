@@ -1,0 +1,5 @@
+-
+ name: This is role 1 playbook
+ hosts: webserver1
+ roles:
+    - webserver

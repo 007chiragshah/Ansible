@@ -1,0 +1,7 @@
+-
+  name: creating 2nd copy module
+  hosts: dbserver1
+  tasks:
+          -
+            name: "Copying file with owner change"
+            copy: src=text.yaml dest=/tmp/ owner=test-2 group=test-2 mode=0644

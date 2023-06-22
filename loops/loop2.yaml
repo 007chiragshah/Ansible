@@ -1,0 +1,10 @@
+- 
+  name: This 2nd loop file
+  hosts: webserver1
+  tasks:
+          -
+            name: "Installing service"
+            apt: name="{{ item }}"  state=present
+            with_items:
+                 - vsftpd
+                 - tree

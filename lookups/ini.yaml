@@ -1,0 +1,10 @@
+-
+ name: This is ini file
+ hosts: dbserver1
+ vars:
+   - ansible_password: "{{ lookup('ini', 'password section=dbserver1 file=credentials.ini')}}"
+
+ tasks:
+         -
+          name: "This will create file from ini"
+          command: touch /tmp/ini.txt

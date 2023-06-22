@@ -1,0 +1,7 @@
+-
+  name: This is the 2nd script module
+  hosts: webserver1
+  tasks:
+          - 
+            name: "If file exist will run the script"
+            script: testscript.sh chirag removes=/tmp/test.txt

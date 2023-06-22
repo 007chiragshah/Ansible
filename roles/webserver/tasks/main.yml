@@ -1,0 +1,9 @@
+---
+# tasks file for webserver
+
+-
+ name: "Installing PHP1"
+ command: touch /tmp/web_application1.txt
+-
+ name: "Intsalling php2"
+ command: touch /tmp/web_application2.txt

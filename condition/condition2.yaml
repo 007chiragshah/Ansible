@@ -1,0 +1,23 @@
+-  
+  name: This is the second condition playbook
+  hosts: webserver1
+  vars:
+    age: 19
+  tasks:
+
+        -
+          name: "This script will create the file if age is ==18"
+          command: touch /tmp/18.txt
+          when: age == 18
+
+-
+  name: This is the second condition playbook
+  hosts: dbserver1
+  vars:
+    age: 19
+  tasks:
+
+        -
+          name: "This will create the file if age is > 19"
+          command: touch /tmp/19.txt
+          when: age > 18

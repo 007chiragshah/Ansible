@@ -1,0 +1,13 @@
+-
+ name: This fire and forgot playbook
+ hosts: webserver1
+ tasks:
+         -
+          name: "sleeping"
+          command: sleep 120
+          async: 60
+          poll: 0
+
+         -
+          name: "creating file"
+          command: touch /tmp/fire_forgot.txt

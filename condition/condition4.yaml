@@ -1,0 +1,21 @@
+- 
+  name: This is the 4th conditional file
+  hosts: dbserver1
+  vars:
+     age: 18
+  tasks:
+          - 
+            name: "This will create the file based on condition"
+            command: touch /tmp/ {{ age }}.txt
+            when: age == 18
+
+          - 
+            name: "This will creates the file"
+            command: touch /tmp/AND_file.txt
+            when: age > 10 and age < 20
+
+          - 
+            name: "This will creates the file"
+            command: touch /tmp/OR_file.txt
+            when: age > 10 or age < 10  
+

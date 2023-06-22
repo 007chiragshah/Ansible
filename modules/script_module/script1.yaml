@@ -1,0 +1,8 @@
+-
+  name: This is first script module
+  hosts: webserver1
+  tasks:
+
+          - 
+            name: "Will run the script on the webserver1"
+            script: testscript.sh chirag

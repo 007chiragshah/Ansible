@@ -1,0 +1,7 @@
+-
+  name: This is the 2nd script module
+  hosts: webserver1
+  tasks:
+          - 
+            name: "If file exist will not run the script"
+            script: testscript.sh creates=/tmp/test.txt

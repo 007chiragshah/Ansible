@@ -1,0 +1,4 @@
+webserver1 ansible_host=192.168.29.152 ansible_user=root ansible_password=1234
+webserver2 ansible_host=192.168.29.3 ansible_user=root ansible_password=1234
+webserver3 ansible_host=192.168.29.33 ansible_user=test-2 ansible_ssh_password=1234
+webserver4 ansible_host=192.168.29.4 ansible_user=test-2 ansible_ssh_password=1234

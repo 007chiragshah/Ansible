@@ -1,0 +1,71 @@
+-
+ name: This is jinja template
+ hosts: webserver1
+ vars:
+   - myname: "Chirag"
+   - dummy_list:
+         - 10
+         - 20
+         - 30
+         - 10
+   - dummy_list2:
+         - 10
+         - 40
+         - 50
+         - 30
+ tasks:
+         - name: "Print the name"
+           debug:
+             msg: "The sexy man name is {{ myname }}" 
+         
+         - name: "Upperr"
+           debug: 
+             msg: "One and Only handsome hung {{ myname | upper }}"
+
+         - name: "lower"
+           debug:
+             msg: "One and Only handsome hung {{ myname | lower }}"
+
+         - name: "replace"
+           debug:
+             msg: "One and Only handsome hung {{ myname | replace('chirag','babita') }}"
+
+         - name: "min"
+           debug:
+             msg: "{{ dummy_list | min }}"
+
+         - name: "max"
+           debug:
+             msg: "{{ dummy_list | max }}"
+
+
+         - name: "unique"
+           debug:
+             msg: "{{ dummy_list | unique }}"
+
+         - name: "union"
+           debug:
+             msg: "{{ dummy_list | union(dummy_list2) }}"
+
+         - name: "intersect"
+           debug:
+             msg: "{{ dummy_list | intersect(dummy_list2) }}"
+
+         - name: "randome"
+           debug:
+             msg: "{{ 100 | random }}"
+
+         - name: "Mendatory"
+           debug:
+             msg: "{{ Mywife | mandatory }}"
+
+
+
+
+
+
+
+
+
+
+

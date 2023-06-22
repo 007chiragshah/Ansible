@@ -1,0 +1,7 @@
+-
+  name: This is 3rd playbook
+  hosts: webserver1
+  tasks:
+          -
+            name: "Creating the Directory to the host"
+            command: mkdir -p /tmp/ansible_dummy_dict

@@ -1,0 +1,12 @@
+- 
+  name: Creating 3rd copy module
+  hosts: webserver1
+  tasks:
+          -
+            name: "Copying file with owner change in different way"
+            copy: 
+              src: text1.yaml
+              dest: /tmp
+              owner: test-1
+              group: test-1
+              mode: 0644

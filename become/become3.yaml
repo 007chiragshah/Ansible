@@ -1,0 +1,9 @@
+-
+ name: This is 2nd become file
+ hosts: webserver1
+ become: yes
+ become_user: root
+ tasks:
+         -
+          name: "Appending the file"
+          lineinfile: path=/etc/resolv.conf line="nameserver 8.8.8.8"

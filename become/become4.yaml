@@ -1,0 +1,10 @@
+-
+ name: This is 4th Play
+ hosts: webserver1
+ become: yes
+ become_user: test-2
+ become_method: su
+ tasks:
+         -
+          name: "Creating the file with test-2"
+          command: touch /tmp/become.txt

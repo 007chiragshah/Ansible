@@ -1,0 +1,8 @@
+-
+  name: This is our second playbook
+  hosts: web_database_server
+  tasks:
+
+     -
+       name: "This will create dummy files on groups"
+       command: touch /tmp/ansible_group_dummy2.txt 

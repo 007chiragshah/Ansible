@@ -1,0 +1,13 @@
+-
+ name: This is 1st stratagy
+ hosts: webserver1,dbserver1
+ strategy: linear
+ tasks:
+
+         -
+          name: "Installing the service"
+          apt: name="apache2" state=present
+
+         -
+          name: "Creating the file"
+          command: touch /tmp/apache2.txt

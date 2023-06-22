@@ -1,0 +1,12 @@
+- name: check registered variable for emptiness
+  hosts: webserver1
+
+  tasks:
+
+      - name: List contents of directory
+        service: name="apache2" 
+        register: state
+
+      - name: Check contents for emptiness
+        command: touch /tmp/apache2.txt
+        when: state is started

@@ -1,0 +1,26 @@
+-
+  name: This is first play
+  hosts: webserver1
+  vars_files:
+      - variables.yaml
+  tasks:
+      - name: "This is task number 1"
+        command: touch /tmp/var/{{ var1 }}.txt
+      - name: "This is task number 2"
+        command: touch /tmp/var/{{ var2 }}.txt
+      - name: "This is task number 3"
+        command: touch /tmp/var/{{ var3 }}.txt
+      - name: "This is task number 4"
+        command: touch /tmp/var/{{ var4 }}.txt
+      - name: "This is task number 5"
+        command: touch /tmp/var/{{ var5 }}.txt
+      - name: "This is task number 6"
+        command: touch /tmp/var/{{ var6 }}.txt
+      - name: "This is task number 7"
+        command: touch /tmp/var/{{ var7 }}.txt
+      - name: "This is task number 8"
+        command: touch /tmp/var/{{ var8 }}.txt
+      - name: "This is task number 9"
+        command: touch /tmp/var/{{ var9 }}.txt
+      - name: "This is task number 10"
+        command: touch /tmp/var/{{ var10 }}.txt

@@ -1,0 +1,5 @@
+---
+# vars file for database
+#
+mdb: Master_DB
+sdb: Slave_DB

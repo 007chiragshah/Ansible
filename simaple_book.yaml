@@ -1,0 +1,11 @@
+-
+ name: This is simple playbook
+ hosts: webserver1
+ tasks:
+        -
+         name: "sleeping for 120 sec"
+         command: sleep 120
+
+        -
+         name: "creating the file"
+         command: touch /tmp/sleep.txt

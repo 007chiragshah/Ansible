@@ -1,0 +1,11 @@
+- 
+  name: This is 1st loop file
+  hosts: webserver1
+  tasks:
+    - 
+     name: "Installing apache2"
+     apt: name=tree state=absent
+
+    - 
+     name: "Installing vsftpd"
+     apt: name=vsftpd state=absent

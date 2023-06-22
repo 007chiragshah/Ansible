@@ -1,0 +1,10 @@
+-
+ name: This is lookup file 1
+ hosts: webserver1
+ vars:
+   - ansible_password: "{{ lookup('csvfile', 'webserver1 file=credentials.csv delimiter=,') }}"
+ 
+ tasks:
+         -
+          name: "This will create the file"
+          command: touch /tmp/csv.txt

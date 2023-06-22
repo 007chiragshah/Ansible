@@ -1,0 +1,8 @@
+-
+  name: This is out=r first playbook
+  hosts: webserver1
+  tasks:
+
+      -
+         name: "Create dummy files on webserver1"
+         command: touch /tmp/ansible_dummy.txt

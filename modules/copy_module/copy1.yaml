@@ -1,0 +1,7 @@
+-
+  name: Creating 1st Copy Module"
+  hosts: webserver1
+  tasks:
+          -
+            name: "1st Copy Module"
+            copy: src=text.yaml dest=/tmp/ 

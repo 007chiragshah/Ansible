@@ -1,0 +1,9 @@
+-
+  name: This is the first variable module
+  hosts: dbserver1
+  vars:
+    servicename: vsftpd
+  tasks:
+          -
+            name: "Will start the service with variabke"
+            service: name={{ servicename }} state=stopped

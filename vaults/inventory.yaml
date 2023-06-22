@@ -1,0 +1,7 @@
+-
+ name: This will use vault file
+ hosts: webserver1
+ tasks:
+         -
+          name: "This will create the file"
+          command: touch /tmp/vault.txt

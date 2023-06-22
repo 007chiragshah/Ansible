@@ -1,0 +1,16 @@
+-
+  name: This is 1st play of playbook5
+  hosts: dbserver1
+  tasks:
+          -
+            name: "Creating the directory"
+            command: mkdir -p /tmp/ansible_play1_dict
+
+
+-
+  name: This is 2nd play of playbook5
+  hosts: web_database_server
+  tasks:
+          -
+            name: "Copying the host from /etc/"
+            command: cp /etc/hosts /tmp/myhosts

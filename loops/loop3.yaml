@@ -1,0 +1,13 @@
+- 
+  name: This is 2nd file of loop
+  hosts: webserver1
+  vars:
+     pkg:
+       - vsftpd
+       - tree
+  tasks:
+
+          - 
+            name: "Installing the services"
+            apt: name="{{ item }}" state=absent
+            with_items: "{{ pkg }}"

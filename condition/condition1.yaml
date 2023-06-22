@@ -1,0 +1,10 @@
+-
+ name: This is first condition playbook
+ hosts: dbserver1
+ vars:
+    age: 18
+ tasks:
+         -
+           name: "Creating the file if condition is match"
+           command: touch /tmp/18.txt
+           when: age == 18

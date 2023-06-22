@@ -1,0 +1,7 @@
+-
+  name: This is the 3rd module of playbook
+  hosts: dbserver1
+  tasks:
+          -
+            name: "Removing user completely"
+            user: name="mytestuser" state=absent remove=yes

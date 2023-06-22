@@ -1,0 +1,35 @@
+- 
+ name: This is php installation
+ hosts: webserver1
+ tasks:
+
+          - 
+           name: "Installing PHP1"
+           command: touch /tmp/php1.txt
+          -
+           name: "Intsalling php2"
+           command: touch /tmp/php2.txt
+
+-
+ name: This is web installtion
+ hosts: webserver1
+ tasks:
+          -           
+           name: "Installing webserver1"
+           command: touch /tmp/web_application1.txt
+
+          -
+           name: "Installing webserver2"
+           command: touch /tmp/web_application2.txt
+
+-
+ name: This is db installation
+ hosts: dbserver1
+ tasks:
+          -
+           name: "Installing MDB"
+           command: touch /tmp/Master_db.txt
+
+          -
+           name: "Installing SDB"
+           command: touch /tmp/Slave_db.txt

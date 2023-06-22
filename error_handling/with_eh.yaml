@@ -1,0 +1,12 @@
+-
+ name: This is without error handling
+ hosts: webserver1
+ tasks: 
+        -
+         name: "Sleeping"
+         command: sleeep 10
+         ignore_errors: true
+
+        -
+         name: "creating the file"
+         command: touch /tmp/without_eh.txt

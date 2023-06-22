@@ -1,0 +1,9 @@
+---
+# tasks file for database
+-
+ name: "Master DB installation"
+ command: touch /tmp/{{ mdb }}.txt
+
+-
+ name: "Slave DB installation"
+ command: touch /tmp/{{ sdb }}.txt

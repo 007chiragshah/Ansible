@@ -1,0 +1,7 @@
+- 
+  name: This is 1st play
+  hosts: webserver1
+  vars_files:
+      - variables.yaml
+  tasks:
+      - include: tasks.yaml

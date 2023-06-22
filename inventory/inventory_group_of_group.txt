@@ -1,0 +1,19 @@
+webserver1 ansible_host=192.168.29.152 ansible_user=test-1 ansible_ssh_password=1234
+webserver2 ansible_host=192.168.29.4 ansible_user=test-2 ansible_ssh_password=1234
+sqlserver1 ansible_host=192.168.29.5 ansible_user=test-2 ansible_ssh_password=1234
+dbserver1 ansible_host=192.168.29.3 ansible_user=test-2 ansible_ssh_password=1234
+
+
+[webservers]
+webserver1
+webserver2
+
+
+[databaseservers]
+sqlserver1
+dbserver1
+
+
+[parentservers:children]
+webservers
+databaseservers

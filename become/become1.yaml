@@ -1,0 +1,7 @@
+-
+ name: This is first become playbook
+ hosts: webserver1
+ tasks:
+         -
+          name: "appending the conf file"
+          lineinfile: path=/etc/resolv.conf line="chirag"

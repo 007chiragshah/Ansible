@@ -1,0 +1,10 @@
+-
+  name: This is 3rd condition playbook
+  hosts: webserver1
+  vars:
+    age: 18
+  tasks:
+          - 
+            name: "This will create file if age conditon true"
+            command: touch /tmp/{{ age }}.txt
+            when: age < 25 and age > 15

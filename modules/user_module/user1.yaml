@@ -1,0 +1,7 @@
+-
+  name: This is first user module
+  hosts: dbserver1
+  tasks:
+          -
+            name: "creating the user"
+            user: name="mytestuser" state=present password="$6$FkSKCYzOQ5t5L9ai$KwyLQ6ynAMfiCAKjXC7dlgcAKSQ6M0vOPkrYd/Hm0mLnuR8txek4MeXsC503jaxfkVKa6POxgw9lR2Vv/g6Fh."

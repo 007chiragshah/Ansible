@@ -1,0 +1,9 @@
+-
+  name: This is the first variable module
+  hosts: webserver1
+  vars:
+    servicename: apache2
+  tasks:
+          -
+            name: "Will start the service with variabke"
+            service: name={{ servicename }} state=started

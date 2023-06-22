@@ -1,0 +1,7 @@
+-
+  name: This is the line module
+  hosts: webserver1
+  tasks:
+          -
+            name: "Insterting the name"
+            lineinfile: path=/tmp/test.txt line="chirag"

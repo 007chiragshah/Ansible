@@ -1,0 +1,9 @@
+-
+  name: This is 1st service module
+  hosts: dbserver1
+  tasks:
+          -
+            name: "Starting/Stoppinh the service"
+            service:
+                    name: apache2
+                    state: started #stopped

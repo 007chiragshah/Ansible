@@ -1,0 +1,12 @@
+-
+ name: This is free strategy
+ hosts: webserver1,dbserver1
+ strategy: free
+ tasks:
+         -
+          name: "Installing the service"
+          apt: name="apache2" state=present
+
+         -
+          name: "Creating the file"
+          command: touch /tmp/free.txt
